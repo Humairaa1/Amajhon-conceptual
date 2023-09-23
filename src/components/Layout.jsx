@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Footer from "./Footer";
 
 const Layout = () => {
@@ -8,13 +8,13 @@ const Layout = () => {
                 <div className="text-xl font-semibold">Amajhon</div>
                 <ul className="flex gap-5 font-semibold">
                     <li>
-                        <a href="/">Home</a>
+                        <Link to="/" >Home</Link>
                     </li>
                     <li>
-                        <a href="/products">Products</a>
+                        <Link to="/products">Products</Link>
                     </li>
                     <li>
-                        <a href="/dashboard">Dashboard</a>
+                        <Link to="/dashboard" >Dashboard</Link>
                     </li>
                 </ul>
             </section>
